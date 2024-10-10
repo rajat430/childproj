@@ -10,4 +10,4 @@ jobs:
       - name: task
         run: |
           echo "task1"
-          ls -ltr *.*.txt
+          ls /**.txt
