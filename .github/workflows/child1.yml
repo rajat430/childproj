@@ -4,7 +4,7 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@1
+      - uses: actions/checkout@v4
       - name: task
         run: |
           echo "task1"
