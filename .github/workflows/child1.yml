@@ -5,7 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: master
       - name: task
         run: |
           echo "task1"
-          ls -ltr
+          ls ../*
+          ls ../../*
+          ls ../../../*
