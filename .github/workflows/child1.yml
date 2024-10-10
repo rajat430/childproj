@@ -4,5 +4,8 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@1
       - name: task
-        run: echo "task1"
+        run: |
+          echo "task1"
+          ls -ltr
