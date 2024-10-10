@@ -10,6 +10,4 @@ jobs:
       - name: task
         run: |
           echo "task1"
-          ls ../*
-          ls ../../*
-          ls ../../../*
+          ls -ltr ../../parentproject
