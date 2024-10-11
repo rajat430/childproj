@@ -6,7 +6,7 @@ on:
         type: string
         required: true
     outputs:
-      name_out: 
+      message: 
         value: ${{ jobs.job.outputs.message }}
         description: "This out message"
 jobs:
