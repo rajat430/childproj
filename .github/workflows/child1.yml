@@ -1,6 +1,10 @@
 name: child1
 on: 
-  workflow_call
+  workflow_call:
+    inputs:
+      name:
+        required: true
+        type: string
 jobs:
   job:
     runs-on: ubuntu-latest
@@ -10,4 +14,4 @@ jobs:
           ref: master
       - name: task
         run: |
-          ls
+          echo ${{name}}
