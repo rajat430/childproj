@@ -1,5 +1,8 @@
 name: child1
-on: workflow_call
+on: 
+  workflow_call:
+    branches:
+      - main
 jobs:
   job:
     runs-on: ubuntu-latest
