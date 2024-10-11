@@ -6,7 +6,9 @@ on:
         type: string
         required: true
     outputs:
-      name_out: ${{ jobs.job.outputs.message }}
+      name_out: 
+        value: ${{ jobs.job.outputs.message }}
+        description: "This out message"
 jobs:
   job:
     runs-on: ubuntu-latest
