@@ -10,5 +10,4 @@ jobs:
           ref: master
       - name: task
         run: |
-          echo "task1"
-          ls /**.txt
+          ls
