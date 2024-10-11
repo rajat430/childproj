@@ -3,8 +3,8 @@ on:
   workflow_call:
     inputs:
       name:
-        required: true
         type: string
+        required: true
 jobs:
   job:
     runs-on: ubuntu-latest
@@ -14,4 +14,4 @@ jobs:
           ref: master
       - name: task
         run: |
-          echo ${{name}}
+          echo ${{inputs.name}}
