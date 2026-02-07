@@ -1,0 +1,17 @@
+name: 'Setup Java & Build'
+description: 'Sets up Java and runs Maven build'
+
+inputs:
+  java-version:
+    description: 'Java version'
+    required: true
+    default: '17'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: ${{ inputs.java-version }}
