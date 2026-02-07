@@ -10,7 +10,7 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Setup Java
+    - name: Setup Java SDK
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
